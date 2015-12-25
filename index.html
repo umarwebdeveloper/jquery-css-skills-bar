@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>jQuery & CSS Skills Bar</title>
+<link href="css/style.css" rel="stylesheet">
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/skill.bars.jquery.js"></script>
+
+<script>
+
+$(document).ready(function(){
+	
+	$('.skillbar').skillBars({
+		from: 0,
+		speed: 4000, 
+		interval: 100,
+		decimals: 0,
+	});
+	
+});
+
+</script>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <h1>jQuery & CSS Skills Bar</h1>
+    
+    <div class="skillbar" data-percent="98">
+      <span class="skillbar-title" style="background: #d35400;">HTML5</span>
+      <p class="skillbar-bar" style="background: #e67e22;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+    
+    <div class="skillbar" data-percent="99">
+      <span class="skillbar-title" style="background: #2980b9;">CSS3</span>
+      <p class="skillbar-bar" style="background: #3498db;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+    
+    <div class="skillbar" data-percent="95">
+      <span class="skillbar-title" style="background: #2c3e50;">jQuery</span>
+      <p class="skillbar-bar" style="background: #2c3e50;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+    
+    <div class="skillbar" data-percent="70">
+      <span class="skillbar-title" style="background: #46465e;">PHP</span>
+      <p class="skillbar-bar" style="background: #5a68a5;"></p>
+      <span class="skill-bar-percent"></span>
+    </div>
+    <!-- End Skill Bar -->
+</div>
+
+</body>
+</html>

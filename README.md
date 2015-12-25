@@ -6,13 +6,13 @@ jquery css skills bar
 ## [Demo](http://umarwebdeveloper.github.io/jquery-css-skills-bar/)
 
 Required Files
-```
+```javascript
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/skill.bars.jquery.js"></script>
 ```
 
 Call Jquery Function
-```
+```javascript
 $('.skillbar').skillBars({
 		from: 0,
 		speed: 4000, 
@@ -21,7 +21,7 @@ $('.skillbar').skillBars({
 ```
 
 HTML markup
-```
+```html
 <div class="skillbar" data-percent="98">
     <span class="skillbar-title" style="background: #d35400;">HTML5</span>
     <p class="skillbar-bar" style="background: #e67e22;"></p>
@@ -30,7 +30,7 @@ HTML markup
 ```
 
 CSS for styling
-```
+```css
 .skillbar {
 	position:relative;
 	display:inline-block;

@@ -19,6 +19,10 @@
 			/*onComplete: function(from) {
                 console.debug(this);
             }*/
+			classes:{
+				skillBarBar : '.skillbar-bar',
+				skillBarPercent : '.skill-bar-percent',
+			}
         }, options );
  
         return this.each(function(){
@@ -34,14 +38,14 @@
 				loopCount = 0,
 				interval = setInterval(updateValue, settings.interval);
 			
-			obj.find('.skillbar-bar').animate({
+			obj.find(settings.classes.skillBarBar).animate({
 				width: parseInt(obj.attr('data-percent'))+'%'
 			}, settings.speed);
 						
 			function updateValue(){
 				from += increment;
                 loopCount++;
-                $(obj).find('.skill-bar-percent').text(from.toFixed(settings.decimals)+'%');
+                $(obj).find(settings.classes.skillBarPercent).text(from.toFixed(settings.decimals)+'%');
 
                 if (typeof(settings.onUpdate) == 'function') {
                     settings.onUpdate.call(obj, from);
